@@ -1,9 +1,13 @@
 import React from "react";
 
-import { addToCart, deleteToCart } from "../redux/action";
-import { useDispatch } from "react-redux";
+import { addToCart, deleteToCart, emptyToCart } from "../redux/action";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Main() {
+  const cart = useSelector((state) => state.cartReducer);
+
+  console.log(cart);
+
   const dispatch = useDispatch();
   const product = {
     name: "IPhone",
@@ -12,14 +16,29 @@ export default function Main() {
     color: "red",
   };
 
-  const handleClick = () => {
-    dispatch(addToCart(product));
-    // dispatch(deleteToCart(product));
+  const handleAddToCart = () => {
+    dispatch(addToCart({ ...product, name: `Iphone${cart.length}` }));
+  };
+
+  const handleDeleteToCart = () => {
+    dispatch(deleteToCart(`Iphone1`));
+  };
+
+  const handleEmptyToCart = () => {
+    dispatch(emptyToCart());
   };
 
   return (
     <main>
-      <button onClick={handleClick}>Add To Cart</button>
+      <div>
+        <button onClick={handleAddToCart}>Add To Cart</button>
+      </div>
+      <div>
+        <button onClick={handleDeleteToCart}>Delete from Cart</button>
+      </div>
+      <div>
+        <button onClick={handleEmptyToCart}>Empty To Cart</button>
+      </div>
     </main>
   );
 }
