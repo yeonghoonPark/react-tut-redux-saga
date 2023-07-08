@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S8",
+      "color": "silver",
+      "price": 680000,
+      "category": "mobile",
+      "brand": "samsung",
+      "photo": "https://images.samsung.com/is/image/samsung/sec-galaxy-s8-plus-g955-sm-g955nzvasko-GalaxyS8Plus-77715842"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S9",
+      "color": "purple",
+      "price": 780000,
+      "category": "mobile",
+      "brand": "samsung",
+      "photo": "https://images.samsung.com/is/image/samsung/sec-galaxy-s9-plus-g965-sm-g965nzpakoo-GalaxyS9--93934140"
+    },
+    {
+      "id": 3,
+      "name": "Apple Iphone 6",
+      "color": "silver",
+      "price": 360000,
+      "category": "mobile",
+      "brand": "apple",
+      "photo": "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP705/SP705-iphone_6-mul.png"
+    },
+    {
+      "id": 4,
+      "name": "Nike Air Jodan 1",
+      "color": "red",
+      "price": 180000,
+      "category": "shoes",
+      "brand": "nike",
+      "photo": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b38436e0-1698-4ccd-ad71-7f64bb805ea6/%EC%97%90%EC%96%B4-%EC%A1%B0%EB%8D%98-1-%ED%95%98%EC%9D%B4-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9D%B4%EC%A6%88-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-dciANdj7.png"
+    }
+  ]
+}
