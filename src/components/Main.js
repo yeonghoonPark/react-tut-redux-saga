@@ -18,11 +18,11 @@ export default function Main() {
   };
 
   const handleAddToCart = () => {
-    dispatch(addToCart(product.name));
+    dispatch(addToCart(product));
   };
 
   const handleDeleteToCart = () => {
-    dispatch(deleteToCart(`Iphone1`));
+    dispatch(deleteToCart());
   };
 
   const handleEmptyToCart = () => {
