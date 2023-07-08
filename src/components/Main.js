@@ -29,6 +29,10 @@ export default function Main() {
     dispatch(emptyToCart());
   };
 
+  const handleProductList = () => {
+    dispatch(productList());
+  };
+
   return (
     <main>
       <div>
@@ -40,11 +44,8 @@ export default function Main() {
       <div>
         <button onClick={handleEmptyToCart}>Empty To Cart</button>
       </div>
-
       <div>
-        <button onClick={() => dispatch(productList())}>
-          Call Product List
-        </button>
+        <button onClick={handleProductList}>Call Product List</button>
       </div>
     </main>
   );
