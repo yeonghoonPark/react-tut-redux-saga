@@ -8,10 +8,11 @@ export const addToCart = (data) => {
   };
 };
 
-export const deleteToCart = () => {
+export const deleteToCart = (data) => {
   console.log("action deleteToCart");
   return {
     type: DELETE_TO_CART,
+    data,
   };
 };
 

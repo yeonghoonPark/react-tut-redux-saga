@@ -8,8 +8,8 @@ export const cartReducer = (state = [], action) => {
 
     case DELETE_TO_CART:
       console.log("cartReducer DELETE_TO_CART", action);
-      state.length = state.length ? state.length - 1 : [];
-      return [...state];
+      return state.filter((cV) => cV.id !== parseInt(action.data));
+
     case EMPTY_CART:
       console.log("cartReducer EMPTY_CART", action);
       return [];
