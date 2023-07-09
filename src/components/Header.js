@@ -1,40 +1,36 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import CartIcon from "./icons/CartIcon";
 import { Link } from "react-router-dom";
 
 import SearchForm from "./SearchForm";
-
-const navLinks = [
-  { path: "/", text: "Home" },
-  { path: "/cart", text: "Cart" },
-];
+import { productList } from "../redux/productAction";
 
 export default function Header() {
+  const dispatch = useDispatch();
   const cart = useSelector((state) => state.cartReducer);
   console.log(cart, "@cart");
+
+  const handleLogo = () => {
+    dispatch(productList());
+  };
 
   return (
     <StyledHeader>
       <div className='left-menu'>
         <h1>
-          <Link to='/'>Logo</Link>
+          <Link to='/' onClick={handleLogo}>
+            Logo
+          </Link>
         </h1>
-        <nav>
-          <ul>
-            {navLinks.map(({ path, text }) => (
-              <li key={path}>
-                <Link to={path}>{text}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </div>
       <div className='right-menu'>
         <SearchForm />
         <span>{cart.length}</span>
-        <CartIcon />
+        <Link to='/cart'>
+          <CartIcon />
+        </Link>
       </div>
     </StyledHeader>
   );
@@ -56,6 +52,7 @@ const StyledHeader = styled.header`
   .left-menu {
     display: flex;
     align-items: center;
+
     ul {
       display: flex;
       align-items: center;
