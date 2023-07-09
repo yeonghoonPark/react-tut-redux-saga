@@ -7,11 +7,9 @@ import { styled } from "styled-components";
 import ProductCard from "../components/ProductCard";
 
 export default function Main() {
+  const cart = useSelector((state) => state.cartReducer);
   const products = useSelector((state) => state.productReducer);
   console.log(products, "@products");
-
-  const cart = useSelector((state) => state.cartReducer);
-  console.log(cart, "@cart Main");
 
   const dispatch = useDispatch();
 
