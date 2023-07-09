@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import styled from "styled-components";
+import { addComma } from "../util/function";
 
 export default function PaymentCard({ cart }) {
   const basePrice = useMemo(() => {
@@ -36,7 +37,7 @@ export default function PaymentCard({ cart }) {
         {paymentList.map(({ text, number }, i) => (
           <span key={i}>
             <em>{text}</em>
-            <em>{number}</em>
+            <em>{addComma(number)}</em>
             <br />
           </span>
         ))}

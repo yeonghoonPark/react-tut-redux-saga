@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { addComma } from "../util/function";
 
 export default function ProductCard({ products, onAddToCart, onDeleteToCart }) {
   const handleAddBtn = (e) => {
@@ -23,7 +24,7 @@ export default function ProductCard({ products, onAddToCart, onDeleteToCart }) {
             <p>
               Color : {color}
               <br />
-              Price : {price}
+              Price : {addComma(price)}
               <br />
               Category : {category}
               <br />
