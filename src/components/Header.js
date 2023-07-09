@@ -4,6 +4,8 @@ import styled from "styled-components";
 import CartIcon from "./icons/CartIcon";
 import { Link } from "react-router-dom";
 
+import SearchForm from "./SearchForm";
+
 const navLinks = [
   { path: "/", text: "Home" },
   { path: "/cart", text: "Cart" },
@@ -30,6 +32,7 @@ export default function Header() {
         </nav>
       </div>
       <div className='right-menu'>
+        <SearchForm />
         <span>{cart.length}</span>
         <CartIcon />
       </div>
@@ -38,6 +41,8 @@ export default function Header() {
 }
 
 const StyledHeader = styled.header`
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,6 +69,8 @@ const StyledHeader = styled.header`
 
   .right-menu {
     position: relative;
+    display: flex;
+    align-items: center;
     span {
       position: absolute;
       top: -6px;

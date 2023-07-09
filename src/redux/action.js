@@ -9,7 +9,7 @@ export const addToCart = (data) => {
 };
 
 export const deleteToCart = (data) => {
-  console.log("action deleteToCart");
+  console.log("action deleteToCart", data);
   return {
     type: DELETE_TO_CART,
     data,

@@ -10,6 +10,9 @@ export default function Main() {
   const products = useSelector((state) => state.productReducer);
   console.log(products, "@products");
 
+  const cart = useSelector((state) => state.cartReducer);
+  console.log(cart, "@cart Main");
+
   const dispatch = useDispatch();
 
   const handleAddToCart = (product) => {
@@ -20,25 +23,18 @@ export default function Main() {
     dispatch(deleteToCart(productId));
   };
 
-  const handleEmptyToCart = () => {
-    dispatch(emptyToCart());
-  };
-
   useEffect(() => {
     dispatch(productList());
   }, [dispatch]);
 
   return (
     <main>
-      <div>
-        <button onClick={handleEmptyToCart}>Empty To Cart</button>
-      </div>
-
       <section>
         <H2>Products</H2>
         <Ul>
           <ProductCard
             products={products}
+            cart={cart}
             onAddToCart={handleAddToCart}
             onDeleteToCart={handleDeleteToCart}
           />

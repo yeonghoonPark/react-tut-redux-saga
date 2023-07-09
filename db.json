@@ -35,6 +35,42 @@
       "category": "shoes",
       "brand": "nike",
       "photo": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b38436e0-1698-4ccd-ad71-7f64bb805ea6/%EC%97%90%EC%96%B4-%EC%A1%B0%EB%8D%98-1-%ED%95%98%EC%9D%B4-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9D%B4%EC%A6%88-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-dciANdj7.png"
+    },
+    {
+      "id": 5,
+      "name": "Red apple",
+      "color": "red",
+      "price": 500,
+      "category": "fruit",
+      "brand": "NongHyup",
+      "photo": "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 6,
+      "name": "BMW M3 2023",
+      "color": "sky blue",
+      "price": 80000,
+      "category": "car",
+      "brand": "BMW",
+      "photo": "https://images.unsplash.com/flagged/photo-1553505192-acca7d4509be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1190&q=80"
+    },
+    {
+      "id": 7,
+      "name": "Chiken stake",
+      "color": "brown",
+      "price": 25000,
+      "category": "food",
+      "brand": "BBQ",
+      "photo": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Boing 707",
+      "color": "white",
+      "price": 999999999,
+      "category": "airplane",
+      "brand": "Boing",
+      "photo": "https://images.unsplash.com/flagged/photo-1555685460-1d9cf532761b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80"
     }
   ]
 }

@@ -30,11 +30,11 @@ export default function ProductCard({ products, onAddToCart, onDeleteToCart }) {
               <br />
               Brand : {brand}
             </p>
-            <button name={id} onClick={handleAddBtn}>
-              Add To Cart
-            </button>
             <button name={id} onClick={handleDeleteBtn}>
               Delete To Cart
+            </button>
+            <button name={id} onClick={handleAddBtn}>
+              Add To Cart
             </button>
           </div>
         </Li>
