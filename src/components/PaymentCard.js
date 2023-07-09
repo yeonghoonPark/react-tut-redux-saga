@@ -37,6 +37,7 @@ export default function PaymentCard({ cart }) {
         {paymentList.map(({ text, number }, i) => (
           <span key={i}>
             <em>{text}</em>
+            <em>{number}</em>
             <em>{addComma(number)}</em>
             <br />
           </span>
