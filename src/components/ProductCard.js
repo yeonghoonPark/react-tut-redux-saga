@@ -43,7 +43,6 @@ export default function ProductCard({ products, onAddToCart, onDeleteToCart }) {
 }
 
 const Li = styled.li`
-  list-style: none;
   width: 80%;
   min-width: 412px;
   margin: 1rem auto;
@@ -52,6 +51,7 @@ const Li = styled.li`
   border: 1px solid #999999;
   border-radius: 0.25rem;
   text-align: left;
+  list-style: none;
 
   img {
     width: 120px;

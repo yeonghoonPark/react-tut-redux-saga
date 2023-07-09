@@ -4,7 +4,7 @@ import { addToCart, deleteToCart, emptyToCart } from "../redux/action";
 import { useDispatch, useSelector } from "react-redux";
 import { productList } from "../redux/productAction";
 import { styled } from "styled-components";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 
 export default function Main() {
   const products = useSelector((state) => state.productReducer);
@@ -35,7 +35,7 @@ export default function Main() {
       </div>
 
       <section>
-        <h1>Products</h1>
+        <H2>Products</H2>
         <Ul>
           <ProductCard
             products={products}
@@ -48,6 +48,11 @@ export default function Main() {
   );
 }
 
+const H2 = styled.h2`
+  text-align: center;
+`;
+
 const Ul = styled.ul`
   padding: 0;
+  margin: 0;
 `;
